@@ -8,16 +8,12 @@ body {
 }
 .main {
     margin: 2em;
-    /* border: solid; */
-}
-.title {
-
 }
 #getNameButton { 
-    background: darkgrey;
-    color: black;
+    background: red;
+    color: white;
     font-size: 1em;  
-    font-family: ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     border-style: none;
     padding: .2em;
