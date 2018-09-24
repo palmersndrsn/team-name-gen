@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body onload="changeButtonText()">
+        <div class="main">
+            <p class="title">2018 Team Name Generator</p>
+            <button id="getNameButton" type="button" onclick="nameGen()"></button>
+            <div class="final-name">
+                <p id="genName"></p>
+            </div>
+        </div>
+
+        <script>
+            function changeButtonText()
+            {
+                var namesButton = ['Fuck with the vision', 'Team Me Up Scotty','Instafame'];
+                var nameButton = namesButton[Math.floor(Math.random()*namesButton.length)]; 
+                document.getElementById("getNameButton").innerHTML=nameButton;
+            }
+
+            function nameGen()
+            {
+                var namesOne = ['Night', 'Team', 'Drift Team','Club','Nite','',''];
+                var nameOne = namesOne[Math.floor(Math.random()*namesOne.length)];
+                var namesTwo = ['Lurk', 'Luck', 'Emotional','Nite','Lonely', 'Brave', 'Running','Runner','Hentai','Sad'];
+                var nameTwo = namesTwo[Math.floor(Math.random()*namesTwo.length)];
+                var namesThree = ['Kids', 'Boys', 'Squad', 'Gang', 'Team','Club','Factory','Style', ''];
+                var nameThree = namesOne[Math.floor(Math.random()*namesOne.length)];        
+                document.getElementById("genName").innerHTML=nameOne + " " + nameTwo + " " + nameThree;
+            }
+            
+        </script>
+    </body>
+</html>
